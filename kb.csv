@@ -1,0 +1,11 @@
+"decentfood (Cereal)"
+"food(p) -> -decentfood(p)"
+"favfood(x,y) & decentfood(y) -> food(x)"
+"favfood(y,z) & food(z) -> ediblefood(y)"
+"favfood(FriedreChicken, carbonara)"
+"favfood(GrillChicken, Cereal)"
+
+"decentDrink (Wine)"
+"drink(m) -> -decentDrink(m)"
+"favdrink(a,b) & decentDrink(b) -> drink(a)"
+"favdrink(Coffee, LongIsland)"

@@ -1,0 +1,140 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and normal chat  -->
+<category> <pattern> HELLO </pattern>
+<template> Hello, What can I do for you? </template> </category> 
+
+<category> <pattern> HI </pattern>
+<template> Hi, What can I do for you? </template> </category> 
+
+<category> <pattern> THANK YOU </pattern>
+<template> Welcome, I will always be available for your help! </template> </category>
+
+  <category> <pattern> THANK </pattern>
+<template> Welcome, I will always be available for your help! </template> </category>
+
+
+
+<category> <pattern> THANK YOU VERY MUCH </pattern>
+<template> Welcome, I will always be available for your help! </template> </category>
+
+<category> <pattern> GOODBYE </pattern>
+<template> Okay is there anything else I can do for you? </template> </category>
+
+  <category> <pattern> GOOD BYE </pattern>
+<template> Okay is there anything else I can do for you? </template> </category>
+
+<category> <pattern> BYE </pattern>
+<template> Okay is there anything else I can do for you? </template> </category>
+
+<category> <pattern> WHAT CAN YOU DO </pattern>
+<template> I HAVE THE FUNCTION OF DO GOOGLE SEARCH AND OPENING LINK FOR YOU </template> </category>
+
+<category> <pattern> NO </pattern>
+<template>#0$Okay, let me know if there's anything I can do for you </template> </category>
+
+<category> <pattern> NOTHING </pattern>
+<template>#0$Okay, let me know if there's anything I can do for you </template> </category>
+
+  <category> <pattern> NONE </pattern>
+<template>#0$Okay, let me know if there's anything I can do for you </template> </category>
+
+<category> <pattern> 2 </pattern>
+<template>#0$Okay, Goodbye </template> </category>
+
+<!-- Google Search cmd 1  -->
+
+<category><pattern> WHO IS * </pattern>
+  <template>#1$<star/></template></category>
+  
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHO IS <star/></srai></template> </category>
+  
+<category><pattern> WHERE IS * </pattern>
+  <template><srai>WHO IS <star/></srai></template> </category>
+  
+<category><pattern> WHO * </pattern>
+  <template>#1$<star/></template></category>
+  
+<category><pattern> WHAT * </pattern>
+  <template><srai>WHO IS <star/></srai></template> </category>
+  
+<category><pattern> WHERE * </pattern>
+  <template><srai>WHO IS <star/></srai></template> </category>
+    
+  
+<!-- Whether to open link or no  cmd 2  -->
+
+<category><pattern> YES </pattern>
+<template>#2$<star/></template></category>
+
+<category><pattern> SURE </pattern>
+<template><srai> YES </srai></template> </category>
+
+<category><pattern> CAN </pattern>
+<template><srai> YES </srai></template> </category>
+
+<category><pattern> OPEN IT </pattern>
+<template><srai> YES </srai></template> </category>
+
+<category><pattern> OPEN </pattern>
+<template><srai> YES </srai></template> </category>
+
+<!-- Which link to open cmd 3  -->
+
+<category><pattern>*</pattern>
+<template>#3$<star/></template></category>
+
+<!-- Definition  cmd 4  -->
+
+<category><pattern> URBAN  </pattern>
+  <template>#4$<star/></template></category>
+  
+<category><pattern> OPEN URBAN </pattern>
+<template><srai> URBAN </srai></template> </category>
+  
+<category><pattern> OPEN DICTIONARY </pattern>
+<template><srai> URBAN </srai></template> </category>
+
+<category><pattern> OPEN URBAN DICTIONARY </pattern>
+<template><srai> URBAN </srai></template> </category>
+
+<category><pattern> DEFINE  </pattern>
+<template><srai> URBAN </srai></template> </category>
+
+<!-- Definition  cmd 5  -->
+
+<category><pattern> IMAGE  </pattern>
+  <template>#5$<star/></template></category>
+  
+<category><pattern> OPEN IMAGE </pattern>
+<template><srai> IMAGE </srai></template> </category>
+  
+<category><pattern> SEE IMAGE </pattern>
+<template><srai> IMAGE </srai></template> </category>
+
+<!-- Definition  cmd 6  -->
+
+<category><pattern> 1  </pattern>
+  <template>#6$<star/></template></category>
+
+
+<!-- Definition  cmd 7  -->
+
+<!--<category><pattern> REMEMBER THIS * IS *</pattern>-->
+<!--  <template>#7$<star index="1"/> is <star index="2"/></template></category>-->
+
+<category><pattern> REMEMBER FACT * IS *</pattern>
+<template>#7$<star index="1"/> is <star index="2"/></template> </category>
+
+
+
+<!-- Definition  cmd 8  -->
+
+<category><pattern> REVIEW WHETHER * IS *</pattern>
+  <template>#8$<star index="1"/> is <star index="2"/></template></category>
+
+  <category><pattern> FACT * IS *</pattern>
+<template>#8$<star index="1"/> is <star index="2"/></template> </category>
+
+</aiml>
